@@ -1,7 +1,15 @@
-import { dark } from '@theme-ui/presets'
+import { base, polaris, deep, dark } from '@theme-ui/presets'
 
 export default {
-    ...dark,
+    ...polaris,
+    colors: {
+        ...dark.colors,
+        modes: {
+            light: {
+                ...polaris.colors
+            }
+        }
+    },
     fonts: {
         body: '"IBM Plex Sans", sans-serif',
         heading: 'inherit',
@@ -16,6 +24,14 @@ export default {
         profile: '/assets/img/photo.jpg'
     },
     sizes: {
-        container: '30rem'
+        container: '35rem'
+    },
+    style: {
+        a: {
+            color: 'secondary'
+        },
+        'a:hover': {
+            color: 'secondary'
+        }
     }
 }

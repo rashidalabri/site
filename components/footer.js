@@ -8,7 +8,7 @@ export default function Footer() {
     const { theme, colorMode, setColorMode } = useThemeUI()
     const size = '1.1rem'
     const mx = 4
-    const my = 2
+    const my = 4
     return (
         <>
             <Divider />
@@ -22,7 +22,6 @@ export default function Footer() {
                 <FiLinkedin color={theme.colors.primary} size={size} sx={{ mx: mx, my: my }} />
                 <FiMail color={theme.colors.primary} size={size} sx={{ mx: mx, my: my }} />
             </Box>
-            <Divider />
         </>
     )
 }
