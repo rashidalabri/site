@@ -3,10 +3,10 @@ import { base, polaris, deep, dark } from '@theme-ui/presets'
 export default {
     ...polaris,
     colors: {
-        ...dark.colors,
+        ...polaris.colors,
         modes: {
             light: {
-                ...polaris.colors
+                ...dark.colors
             }
         }
     },
